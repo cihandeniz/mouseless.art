@@ -1,0 +1,128 @@
+body {
+  font-family: monospace;
+  padding: 20px;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#memory {
+  flex: 1;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+#controls {
+  flex: 1;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1c86ee;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  color: #ffffff;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#code {
+  font-family: "monospace";
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.2;
+  white-space: pre-wrap;
+}
+
+.memory-cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  font-weight: bold;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.highlight {
+  background-color: #333;
+  color: white;
+}
+
+.current {
+  background-color: #f34f4f;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  #container {
+    flex-direction: row;
+  }
+
+  #memory {
+    max-width: 70%;
+  }
+
+  #controls {
+    flex: 0 0 200px;
+    margin-left: 20px;
+    min-width: 200px;
+  }
+
+  #code,
+  #output {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1024px) {
+  #code,
+  #output {
+    font-size: 1.6em;
+  }
+}
