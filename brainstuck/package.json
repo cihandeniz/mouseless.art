@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "tone": "15.1.22"
+  },
+  "devDependencies": {
+    "vite": "7.1.5"
+  }
+}
